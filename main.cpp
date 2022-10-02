@@ -13,7 +13,7 @@ void reset ()
 
 void red ()
  {
-  system("color 04");                                                                              //sets the colour to red
+  system("color 02");                                                                              //sets the colour to red
 }
 
 void yellow() 
@@ -38,7 +38,7 @@ void newuser(Bankdata &cus)                                                     
 		system("cls");                                                                          //clears the output screen before new user menu 
 	    cout <<"\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\tWELCOME TO THE NEW USER MENU"<<endl;
 	    cout <<"\t\t\t\t\t\t\t\t\t\t\t===========================================================" << endl<<endl;
-	    cout <<"\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\tYOU ARE JUST A STEP BEFORE ONLINE BANKING!!!!!!!" << endl<<endl;
+	    cout <<"\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\tYOU ARE JUST A STEP BEFORE ONLINE BANKING !" << endl<<endl;
 	    cout <<"\t\t\t\t\t\t\t\t\t\t\t=======================================================" << endl;
 	    red();                                                                                  //sets the font colour to red 
 		cout<<"\t\t\t\t\t\t\t\t\t\t\t|1.Click the option Create New Account if you are a above 18 and not created an account|\n\t\t\t\t\t\t\t\t\t\t\t|2.Click the option Loan Form if you want apply for loan                               |\n\t\t\t\t\t\t\t\t\t\t\t|3.Click the option FD form if you want to deposit amount                              |\n\n";
@@ -46,7 +46,7 @@ void newuser(Bankdata &cus)                                                     
 		reset();                                                                               // resets the default colour
     	cout <<"\t\t\t\t\t\t\t\t\t\t\t=======================================================" << endl<<endl;
     	cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t[1]Create New Account\n\n\t\t\t\t\t\t\t\t\t\t\t[2]Loan Form\n\n\t\t\t\t\t\t\t\t\t\t\t[3]FD Form\n\n\t\t\t\t\t\t\t\t\t\t\t[0]Exit"<<endl;
-    	cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\tENTER THE OPTION TOU ARE SEARCHING FOR   ";
+    	cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t ENTER THE OPTION TOU ARE SEARCHING FOR :  ";
     	cin>>ch;
     	switch(ch)
     	{
@@ -80,7 +80,6 @@ void olduser(Bankdata &cus)                                                     
 	do
 	{
 		system("cls");                                                                         //clears the output screen
-
 		cout <<"\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\tWELCOME TO EXISITING USER MENU"<<endl;
     	cout <<"\t\t\t\t\t\t\t\t\t\t\t=============================================" << endl<<endl;
     	red();                                                                                 //sets the font colour to red
@@ -96,7 +95,7 @@ void olduser(Bankdata &cus)                                                     
         {
         	case 0:
         	return;
-            break;
+                break;
 
         	case 1:
         	cus.read_details();                                                              //search and display the specific user details after entering acc no
@@ -137,9 +136,9 @@ void usermenu()                                                                 
 	{
 		
 		system("cls");                                                                   //clears the output screen
-    	cout <<"\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\tWELCOME  TO  USER   MENU"<<endl;
-    	cout <<"\t\t\t\t\t\t\t\t\t\t\t=============================================" << endl<<endl;
-    	red();                                                                           //sets the font colour to red
+		cout <<"\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\tWELCOME  TO  USER   MENU"<<endl;
+		cout <<"\t\t\t\t\t\t\t\t\t\t\t=============================================" << endl<<endl;
+		red();                                                                           //sets the font colour to red
 		cout<<"\t\t\t\t\t\t\t\t\t\t\t|1.Click the option New User to fill the details of your's|\n\t\t\t\t\t\t\t\t\t\t\t|2.Click the option Old User to proceed further           |\n";
 		reset();                                                                        //resets to the default colour
 		cout <<"\t\t\t\t\t\t\t\t\t\t\t=============================================" << endl<<endl;
